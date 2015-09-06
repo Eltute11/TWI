@@ -2,27 +2,27 @@ package ar.edu.unlam.tallerweb.figuras;
 
 
 public class TrianguloEquilatero {
-
-	private double base; 
+ 
 	private double altura;
 	private int lado;
 
 
-	public TrianguloEquilatero(double base, double altura, int lado){
-		this.base = base;
+	public TrianguloEquilatero(double altura, int lado){
 		this.altura = altura;
 		this.lado = lado;
 	}
 
 
 	public double area(){
-		double area = base * altura;
+		double area = (lado * altura)/2;
+		System.out.println(area);
 		return area;
 	}
 	
 	public double perimetro(){
 		int trianguloequilatero = 3;
 		double perimetro = lado * trianguloequilatero;
+		System.out.println(perimetro);
 		return perimetro;
 	}
 
